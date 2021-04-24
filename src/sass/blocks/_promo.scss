@@ -4,7 +4,11 @@
     background: url('../img/bg.jpg') center (center/cover) no-repeat;
     padding-top: 105px;
     
-  &__title {
+    &__circle {
+        position: relative;
+        @include before_circle;
+    }
+    &__title {
     // width: 535px;
     margin-top: 10px;
     }
@@ -27,4 +31,5 @@
         }
 
     }
+    
 }
