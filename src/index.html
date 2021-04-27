@@ -422,19 +422,24 @@
 
                     <form action="#" class="contacs__form">
                         <div class="contacs__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacs__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacs__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacs__triggers">
                             <button class="btn contacs_btn">Отправить сообщение</button>
+                            <div class="contacs__policy">
+                                <input required type="checkbox">
+                            <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                            
                         </div>
                     </form>
                     
