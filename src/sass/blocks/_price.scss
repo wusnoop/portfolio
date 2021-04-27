@@ -22,7 +22,7 @@
         padding-left: 25px;
         position: relative;
         display: grid;
-        grid-template-columns: 200px 100px;
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: 22px 22px;
         justify-content: space-between;
         align-content: space-between;
@@ -41,6 +41,7 @@
             line-height: 21px
         }
         &-sell {
+            text-align: end;
             font-weight: bold;
             font-size: 14px;
             line-height: 21px;
