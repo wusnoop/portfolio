@@ -1,5 +1,5 @@
 .price {
-    padding-top: 120px;
+    padding-top: 60px;
     &__title {
         position: relative;
         text-align: center;
@@ -10,22 +10,21 @@
         }
     }
     &__wrapper {
-        padding: 60px 48px 0 53px;
+        margin-top: 60px;
+        padding: 0 60px;
         display: grid;
-        grid-template-columns: repeat(2, 366px);
-        grid-template-rows: repeat(3, 44px);
+        grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
+        grid-auto-rows: minmax(45px, auto);
         row-gap: 15px;
         justify-content: space-between;
         
     }
     &__items {
-        padding-left: 25px;
         position: relative;
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: 22px 22px;
-        justify-content: space-between;
-        align-content: space-between;
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+        row-gap: 5px;
+        padding-left: 25px;
         &::before {
             content: '';
             width: 15px;

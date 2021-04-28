@@ -42,9 +42,9 @@
     &__rating {
         padding-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(auto-fit,450px);
         column-gap: 45px;
-        grid-template-rows: repeat(2, 70px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
         row-gap: 30px;
         &-item {
             display: grid;
